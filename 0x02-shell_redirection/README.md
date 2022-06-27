@@ -1,1 +1,1 @@
-a cript to echo hello_world
+0. write a script that prints "Hello, World", followed by a new line to the standard output.
