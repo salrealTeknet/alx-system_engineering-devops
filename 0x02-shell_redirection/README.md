@@ -13,3 +13,4 @@
 
     The current and parent directories should not be taken into account
     Hidden directories should be counted
+12. Create a script that displays the 10 newest files in the current directory.
