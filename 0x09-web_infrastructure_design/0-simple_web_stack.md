@@ -1,3 +1,4 @@
+![0-simple_web_stack](https://user-images.githubusercontent.com/106748762/206904248-fbf0ddd9-a020-4b6e-8680-6d051e3a8675.jpg)
 
 
 Description
