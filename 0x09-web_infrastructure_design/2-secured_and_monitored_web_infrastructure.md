@@ -1,4 +1,5 @@
-https://miro.com/app/board/uXjVP6piL_Q=/?moveToWidget=3458764540975266634&cot=14
+![2-secured_and_monitored_web_infrastructure](https://user-images.githubusercontent.com/106748762/206905144-d90057cc-130d-4257-8449-537cf99f8943.jpg)
+
 
 Description
 
