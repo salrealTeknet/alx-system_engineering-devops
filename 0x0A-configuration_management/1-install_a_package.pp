@@ -1,4 +1,4 @@
-# This Puppet manifest installs puppet-lint
+# Installs puppet-lint
 
 package { 'puppet-lint':
   ensure   => '2.1.0',
