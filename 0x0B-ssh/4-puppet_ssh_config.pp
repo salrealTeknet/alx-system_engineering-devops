@@ -1,14 +1,6 @@
-# This puppet manifest changes the ssh configuration file.
-
-file_line { 'Turn off password auth':
-  ensure => 'present',
-    path => '/etc/ssh/ssh_config',
-    line => '    PasswordAuthentication no',
-  match  => '#     PasswordAuthentication yes',
-}
-
-file_line { 'Declare identity file':
-  ensure => 'present',
-    path => '/etc/ssh/ssh_config',
-    line => '    IdentityFile ~/.ssh/holberton',
+# Changes SSH config file
+exec { 'echo':
+  path    => 'usr/bin:/bin',
+  command => 'echo "    IdentityFile ~/.ssh/holberton\n    PasswordAuthentication no" >> /etc/ssh/ssh_config',
+  returns => [0,1],
 }
