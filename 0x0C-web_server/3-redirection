@@ -3,7 +3,7 @@
 
 apt-get -y install nginx
 mkdir -p /data/www
-echo "Hello World!" > index.html
+echo "Holberton School for the win!" > index.html
 cp index.html /data/www/
 cat > default <<EOF
 server {
