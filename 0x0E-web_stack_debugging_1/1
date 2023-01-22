@@ -1,21 +1,15 @@
-Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
-Hit:2 http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu focal InRelease
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 https://deb.nodesource.com/node_14.x focal InRelease
 Hit:3 http://archive.ubuntu.com/ubuntu focal InRelease
-Hit:4 https://deb.nodesource.com/node_14.x focal InRelease
-Get:5 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
-Get:6 http://nginx.org/packages/ubuntu focal InRelease [3,596 B]
-Ign:7 http://ppa.launchpad.net/vbernat/haproxy-1.7/ubuntu focal InRelease
-Err:8 http://ppa.launchpad.net/vbernat/haproxy-1.7/ubuntu focal Release
+Hit:4 http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu focal InRelease
+Get:5 http://nginx.org/packages/ubuntu focal InRelease [3,596 B]
+Hit:6 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Ign:8 http://ppa.launchpad.net/vbernat/haproxy-1.7/ubuntu focal InRelease
+Err:9 http://ppa.launchpad.net/vbernat/haproxy-1.7/ubuntu focal Release
   404  Not Found [IP: 185.125.190.52 80]
-Get:9 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
-Get:10 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [1,879 kB]
-Get:11 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2,436 kB]
-Get:12 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [982 kB]
-Err:6 http://nginx.org/packages/ubuntu focal InRelease
+Err:5 http://nginx.org/packages/ubuntu focal InRelease
   The following signatures couldn't be verified because the public key is not available: NO_PUBKEY ABF5BD827BD9BF62
-Get:13 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2,003 kB]
-Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2,909 kB]
-Get:15 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,284 kB]
 Reading package lists...
 E: The repository 'http://ppa.launchpad.net/vbernat/haproxy-1.7/ubuntu focal Release' does not have a Release file.
 W: GPG error: http://nginx.org/packages/ubuntu focal InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY ABF5BD827BD9BF62
@@ -23,26 +17,9 @@ E: The repository 'http://nginx.org/packages/ubuntu focal InRelease' is not sign
 Reading package lists...
 Building dependency tree...
 Reading state information...
-The following additional packages will be installed:
-  libcurl4
-The following packages will be upgraded:
-  curl libcurl4
-2 upgraded, 0 newly installed, 0 to remove and 150 not upgraded.
-Need to get 396 kB of archives.
-After this operation, 6,144 B of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 curl amd64 7.68.0-1ubuntu2.15 [161 kB]
-Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcurl4 amd64 7.68.0-1ubuntu2.15 [235 kB]
-debconf: delaying package configuration, since apt-utils is not installed
-Fetched 396 kB in 0s (1,881 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 85248 files and directories currently installed.)
-Preparing to unpack .../curl_7.68.0-1ubuntu2.15_amd64.deb ...
-Unpacking curl (7.68.0-1ubuntu2.15) over (7.68.0-1ubuntu2.7) ...
-Preparing to unpack .../libcurl4_7.68.0-1ubuntu2.15_amd64.deb ...
-Unpacking libcurl4:amd64 (7.68.0-1ubuntu2.15) over (7.68.0-1ubuntu2.7) ...
-Setting up libcurl4:amd64 (7.68.0-1ubuntu2.15) ...
-Setting up curl (7.68.0-1ubuntu2.15) ...
-Processing triggers for man-db (2.9.1-1) ...
-Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+curl is already the newest version (7.68.0-1ubuntu2.15).
+0 upgraded, 0 newly installed, 0 to remove and 150 not upgraded.
+rm: cannot remove '/etc/nginx/sites-available/*': No such file or directory
 rm: cannot remove '/etc/nginx/sites-enabled/*~': No such file or directory
  * Restarting nginx nginx
    ...done.
