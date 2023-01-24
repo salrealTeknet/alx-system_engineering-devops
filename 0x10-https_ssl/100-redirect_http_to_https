@@ -36,7 +36,7 @@ defaults
 
 frontend load_balancer
 	bind	0.0.0.0:80
-	bind	0.0.0.0:443 ssl crt /etc/ssl/www.djmixphiit.tech/www.djmixphiit.tech.pem
+	bind	0.0.0.0:443 ssl crt /etc/ssl/www.salrealteknet.tech/www.salrealteknet.tech.pem
 	mode	http
 
 	redirect scheme https code 301 if !{ ssl_fc }
@@ -52,5 +52,5 @@ backend letsencrypt-backend
 backend web_servers
 	balance	roundrobin
 	mode	http
-	server	1115-web-01 34.202.234.205:80
-	server	1115-web-02 54.209.10.253:80
+	server	84668-web-01 34.202.234.205:80
+	server	84668-web-02 54.209.10.253:80
