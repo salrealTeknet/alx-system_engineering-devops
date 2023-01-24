@@ -36,8 +36,8 @@ defaults
 backend web-backend
         balance roundrobin
         redirect scheme https if !{ ssl_fc }
-        server 77746-web-01 34.202.234.205:80 check
-        server 77746-web-02 54.209.10.253:80 check
+        server 84668-web-01 34.202.234.205:80 check
+        server 84668-web-02 54.209.10.253:80 check
 
 
 frontend http
