@@ -1,5 +1,14 @@
-# puppet ssh configuration
-exec { 'ssh_config':
-  path    => '/bin',
-  command => 'echo "PasswordAuthentication no" >> /etc/ssh/ssh_config; echo "IdentityFile ~/.ssh/holberton" >> /etc/ssh/ssh_config',
+# Modify client config file
+include stdlib
+
+file_line {
+  'password_auth':
+    ensure => present,
+    path   => '/etc/ssh/ssh_config',
+    line   => '    PasswordAuthentication no'
+  ;
+  'key_location':
+    ensure => present,
+    path   => '/etc/ssh/ssh_config',
+    line   => '    IdentityFile ~/.ssh/school'
 }
