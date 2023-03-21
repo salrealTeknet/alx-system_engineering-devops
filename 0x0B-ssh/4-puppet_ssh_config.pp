@@ -14,4 +14,9 @@ file_line { 'Delare identity file':
   line   => '     IdentityFile ~/.ssh/school',
   replace => true,
 }
+<<<<<<< HEAD
+Footer
+© 2023 GitHub, Inc.
+=======
 
+>>>>>>> 9b88959931f06454d5afcedcf2bcaf740b164027
